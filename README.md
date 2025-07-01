@@ -19,81 +19,6 @@
 * **Interactive Menu:** Provides an easy-to-use menu for initiating scans.
 
 
-## 🛠️ Prerequisites
-
-Before running `AUTOOUES`, ensure you have the following tools installed on your system. These are common tools in penetration testing environments like Kali Linux, but can be installed on most Linux distributions and macOS.
-
-1.  **`subfinder`**: For passive subdomain enumeration.
-
-    * **Installation:** Follow instructions on [ProjectDiscovery/subfinder GitHub](https://github.com/projectdiscovery/subfinder).
-
-        ```bash
-        # If you have Go installed (recommended method)
-        go install -v https://github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-        ```
-
-        Ensure `~/go/bin` is in your PATH.
-
-2.  **`dig`**: For DNS lookups (part of `dnsutils` or `bind-utils`).
-
-    * **Installation (Debian/Ubuntu):**
-
-        ```bash
-        sudo apt update
-        sudo apt install dnsutils
-        ```
-
-    * **Installation (CentOS/RHEL):**
-
-        ```bash
-        sudo yum install bind-utils
-        ```
-
-    * **Installation (macOS with Homebrew):**
-
-        ```bash
-        brew install dnsutils
-        ```
-
-3.  **`whois`**: For querying WHOIS information.
-
-    * **Installation (Debian/Ubuntu):**
-
-        ```bash
-        sudo apt update
-        sudo apt install whois
-        ```
-
-    * **Installation (CentOS/RHEL):**
-
-        ```bash
-        sudo yum install whois
-        ```
-
-    * **Installation (macOS with Homebrew):**
-
-        ```bash
-        brew install whois
-        ```
-
-4.  **`nuclei`**: For vulnerability scanning with templates.
-
-    * **Installation:** Follow instructions on [ProjectDiscovery/nuclei GitHub](https://github.com/projectdiscovery/nuclei).
-
-        ```bash
-        # If you have Go installed (recommended method)
-        go install -v https://github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-        ```
-
-        Ensure `~/go/bin` is in your PATH.
-
-    * **Update Nuclei Templates (Crucial!):** After installing `nuclei`, always run this command to get the latest templates:
-
-        **Copy and paste this command into your terminal:**
-        ```bash
-        nuclei -update-templates
-        ```
-
 ## 🚀 Installation
 
 1.  **Clone the repository (once uploaded to GitHub) or download the script:**
@@ -105,10 +30,18 @@ Before running `AUTOOUES`, ensure you have the following tools installed on your
 
     *(For now, you'll just copy the script content into a file.)*
 
-2.  **Make the script executable:**
+2.  **Make the script and requirement file executable:**
 
     ```bash
     chmod +x auto_takeover_scanner.sh
+    ```
+     ```bash
+    chmod +x requirements.sh
+    ```
+3. **Run `requirements.sh` to get Web Security Scanner Toolkit Prerequisites
+
+   ```bash
+    ./requirements.sh
     ```
 
 ## 💻 Usage
