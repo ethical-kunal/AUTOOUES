@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3cb7e0fe-4ded-4880-9adf-d6e09eae4c67" alt="AUTOOUES" />
+  <img src="https://github.com/user-attachments/assets/c54e8e5d-c09b-4818-84c8-4c3e08e5a6a8" alt="AUTOOUES" />
 </p>
-
 
 ## 📝 Description
 
