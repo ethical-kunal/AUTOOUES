@@ -38,7 +38,7 @@
      ```bash
     chmod +x requirements.sh
     ```
-3. **Run `requirements.sh` to get Web Security Scanner Toolkit Prerequisites**
+3. **Run `requirements.sh` to get Web Security Scanner Toolkit Prerequisites:**
 
    ```bash
     ./requirements.sh
